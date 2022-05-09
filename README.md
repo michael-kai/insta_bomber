@@ -1,7 +1,7 @@
 # insta_sender
 Insta_sender is python script for Instagram.
 
-This script let you collect subscribers of any given account and then send Direct Messages to this subscribers.
+This script let you to collect subscribers of any given account and then send Direct Messages to this subscribers.
 
 ## Instruction
 - Install requirements.txt
@@ -19,6 +19,6 @@ This script let you collect subscribers of any given account and then send Direc
  - Run script.
 
 ## Caution!
-- Limits - max count of subscribers to send messages limited to 500 in **MaxSubsCount** attr. Because of Instagram bans, between each sent message script take pause for 420 seconds (7min). Now count how long it will takes for 1000 subs and more!
+- Limits - max count of subscribers to send messages limited to 500 in **MaxSubsCount** attr. Because of Instagram bans, between each sent message script takes pause up to 420 seconds (7min). Now count how long it will takes for 1000 subs and more!
 - Script sends messages only to not private subscribers.
 - If in some case **sending** process will be aborted, you can just rerun script and continue send messages without duplicates.
