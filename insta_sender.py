@@ -271,7 +271,7 @@ class SeleniumLogin:
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(message)s')
-    account = 'https://www.instagram.com/3306.dmitrii/'
+    account = 'Enter account here'
     # E.g. https://www.instagram.com/wsj/
     login = config('login')
     password = config('password')
