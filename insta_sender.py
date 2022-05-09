@@ -260,6 +260,7 @@ class SeleniumLogin:
             SeleniumLogin.count_receiver(sub)
 
             time.sleep(420)
+
             self.browser.get(self.InstaDM)
 
         SeleniumLogin.clear_statistic()
