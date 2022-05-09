@@ -189,14 +189,13 @@ class SeleniumLogin:
                 except Exception:
                     print(resp.status_code)
 
-        time.sleep(420)
         not_private_subs = []
         for users in all_subs:
             for user in users:
                 if not user['is_private']:
                     not_private_subs.append(user['username'])
 
-        logging.error(f'Subscribers with no private accounts {len(not_private_subs)}')
+        logging.error(f'Subscribers with not private accounts {len(not_private_subs)}')
         logging.error(f'Subscribers collected - {len(not_private_subs)}')
         SeleniumLogin.save_subs_to_file(subs_list=not_private_subs)
 
@@ -260,7 +259,7 @@ class SeleniumLogin:
 
             SeleniumLogin.count_receiver(sub)
 
-            time.sleep(5)
+            time.sleep(420)
             self.browser.get(self.InstaDM)
 
         SeleniumLogin.clear_statistic()
@@ -272,7 +271,7 @@ class SeleniumLogin:
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(message)s')
-    account = 'Enter account here'
+    account = 'https://www.instagram.com/3306.dmitrii/'
     # E.g. https://www.instagram.com/wsj/
     login = config('login')
     password = config('password')
