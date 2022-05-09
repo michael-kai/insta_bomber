@@ -20,4 +20,5 @@ This script let you collect subscribers of any given account and then send Direc
 
 ## Caution!
 - Limits - max count of subscribers to send messages limited to 500 in **MaxSubsCount** attr. Because of Instagram bans, between each sent message script take pause for 420 seconds (7min). Now count how long it will takes for 1000 subs and more!
-- Script sends messages only to not private subscribers
+- Script sends messages only to not private subscribers.
+- If in some case **sending** process will be aborted, you can just rerun script and continue send messages without duplicates.
