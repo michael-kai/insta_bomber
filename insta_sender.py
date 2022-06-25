@@ -33,6 +33,7 @@ class SeleniumLogin:
                'x-ig-app-id': '936619743392459',
                'x-ig-www-claim': 'hmac.AR1Dqa90VC1NKP3c1-fLj81JO_0MY9M8_NVaHylIZjaXXKxM',
                }
+    path_close_pop_up_0 = '_a9-- _a9_1'
     path_close_pop_up = 'aOOlW.HoLwm '
     path_send_message = 'sqdOP.L3NKy.y3zKF'
     path_if_user_exist = '/html/body/div[6]/div/div/div[2]/div[2]/div[1]/div/div[3]'
@@ -114,6 +115,8 @@ class SeleniumLogin:
         time.sleep(5)
 
         try:
+            self.browser.find_element(by=By.CLASS_NAME, value=self.path_close_pop_up_0).click()
+            time.sleep(2)
             self.browser.find_element(by=By.CLASS_NAME, value='MWDvN')
         except selenium.common.exceptions.NoSuchElementException:
             self.browser.close()
