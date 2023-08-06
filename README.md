@@ -1,7 +1,7 @@
 # insta_sender
 Insta_sender is python script for Instagram.
 
-This script let you to collect subscribers of any given account and then send Direct Messages to this subscribers.
+This script let you to collect subscribers of any given account and then send Direct Messages to those subscribers.
 
 ## Instruction
 - Install requirements.txt
